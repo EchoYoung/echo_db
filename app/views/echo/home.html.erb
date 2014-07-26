@@ -1,2 +1,10 @@
-<h1>Echo#home</h1>
-<p>Find me in app/views/echo/home.html.erb</p>
+<div class="center hero-unit">
+    <h1>Welcome!</h1>
+    <h2>
+        Welcome to EchoLabs, a cutting edge wearable techonology that will allow you to monitor key indicators in your body.
+    </h2>
+
+    <%= link_to "Sign up!", signup_path, class: "btn btn-large btn-primary" %>
+</div>
+
+<%= link_to image_tag("echolabs.png", alt: "EchoLabs"), 'http://echolabs.com/' %>
