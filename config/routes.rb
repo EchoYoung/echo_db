@@ -1,8 +1,7 @@
 EchoDb::Application.routes.draw do
   get "users/new"
-  get "echo/home"
 
-  root 'static_pages#home'
+  root 'echo#home'
   match '/signup', to: 'users#new',     via: 'get'
   
   
