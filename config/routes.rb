@@ -1,6 +1,5 @@
 EchoDb::Application.routes.draw do
-  get "users/new"
-
+  resources :users
   root 'echo#home'
   match '/signup', to: 'users#new',     via: 'get'
   
