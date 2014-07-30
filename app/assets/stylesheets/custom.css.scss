@@ -109,8 +109,6 @@ footer ul {
     }
 }
 
-<<<<<<< HEAD
-=======
 /* miscellaneous */
 
 .debug_dump {
@@ -121,7 +119,6 @@ footer ul {
     @include box_sizing;
 }
 
->>>>>>> sign-up
 /* sidebar */
 
 aside {
@@ -152,19 +149,6 @@ aside {
     margin-right: 10px;
 }
 
-<<<<<<< HEAD
-/* miscellaneous */
-
-.debug_dump {
-    clear: both;
-    float: left;
-    width: 100%;
-    margin-top: 45px;
-    @include box_sizing;
-}
-
-=======
->>>>>>> sign-up
 /* forms */
 
 input, textarea, select, .uneditable-input {
@@ -177,19 +161,3 @@ input, textarea, select, .uneditable-input {
 input {
     height: auto !important;
 }
-<<<<<<< HEAD
-
-#error_explanation {
-    color: #f00;
-    ul {
-        list-style: none;
-        margin: 0 0 18px 0;
-    }
-}
-
-.field_with_errors {
-    @extend .control-group;
-    @extend .error;
-}
-=======
->>>>>>> sign-up
