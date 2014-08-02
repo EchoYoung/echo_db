@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+    has_many :biometrics, dependent: :destroy
+
     before_save { self.email = email.downcase } 
     before_save { self.gender = gender.downcase }
     before_save { self.name = name.downcase }

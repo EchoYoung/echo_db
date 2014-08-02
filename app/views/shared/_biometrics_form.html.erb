@@ -1,0 +1,8 @@
+<%= form_for(@biometric) do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+    <div class="field">
+        <%= f.text_area :height, placeholder: "Enter your height:" %>
+        <%= f.text_area :weight, placeholder: "Enter your weight:" %>
+    </div>
+    <%= f.submit "Submit", class: "btn btn-large btn-primary" %>
+<% end %>

@@ -1,10 +1,23 @@
-<div class="center hero-unit">
-    <h1>Welcome!</h1>
-    <h2>
-        Welcome to EchoLabs, a cutting edge wearable techonology that will allow you to monitor key indicators in your body.
-    </h2>
+<% if signed_in? %>
+    <div class="row">
+        <aside class="span4">
+            <section>
+                <%= render 'shared/user_info' %>
+            </section>
+            <section>
+                <%= render 'shared/biometrics_form' %>
+            </section>
+        </aside>
+    </div>
+<% else %>
+    <div class="center hero-unit">
+        <h1>Welcome!</h1>
+        <h2>
+            Welcome to EchoLabs, a cutting edge wearable techonology that will allow you to monitor key indicators in your body.
+        </h2>
 
-    <%= link_to "Sign up!", signup_path, class: "btn btn-large btn-primary" %>
-</div>
+        <%= link_to "Sign up!", signup_path, class: "btn btn-large btn-primary" %>
+    </div>
 
 <%= link_to image_tag("echolabs.png", alt: "EchoLabs"), 'http://www.echo-laboratories.com' %>
+<% end %>

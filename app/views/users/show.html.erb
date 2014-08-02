@@ -6,6 +6,10 @@
             <h1>
                 <%= gravatar_for @user %>
                 <%= @user.name %>
+                <%= if @user.biometrics.any? %>
+                    <h2>Biometrics</h2>
+                    <h3>Height: (<%= @user.biometrics.height %>)</h3>
+                    <h3>Weight: (<%= @user.biometrics.weight %>)</h3>
             </h1>
         </section>
     </aside>
